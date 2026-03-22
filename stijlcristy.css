@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@200;300;400;500&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --bg: #0e0e0e;
+  --surface: #161616;
+  --gold: #c9a96e;
+  --gold-dim: rgba(201, 169, 110, 0.12);
+  --text: #f0ebe2;
+  --muted: #6b635a;
+  --border: rgba(201, 169, 110, 0.2);
+  --radius: 4px;
+}
+
+html { box-sizing: border-box; scroll-behavior: smooth; }
+*, *:before, *:after { box-sizing: inherit; }
+main ul.arrivals::-webkit-scrollbar { display: none; }
+
+body {
+  background-color: var(--bg);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+}
+
+header {
+  width: 100%;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  padding: 0 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+header .hamburger {
+  width: 2.4rem;
+  height: auto;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  filter: invert(1);
+}
+header .hamburger:hover { opacity: 1; }
+
+header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--text);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header nav { display: none; }
+
+header nav.active {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 7rem;
+  z-index: 300;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-top: none;
+  min-width: 18rem;
+}
+
+header nav ul li { border-top: 1px solid var(--border); }
+header nav ul li:first-child { border-top: none; }
+
+header nav ul li a {
+  display: block;
+  padding: 1.6rem 2.4rem;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: color 0.2s, background 0.2s;
+}
+
+header nav ul li a:hover {
+  color: var(--gold);
+  background: var(--gold-dim);
+}
+
+main .welkom {
+  background-image: url(cristy/WWW.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+main .welkom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  background: linear-gradient(to bottom, transparent, var(--bg));
+}
+
+main .arrivals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  padding: 0.6rem;
+}
+
+main .arrivals li {
+  height: 52vw;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: filter 0.3s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  filter: brightness(0.92);
+}
+
+main .arrivals li:hover { filter: brightness(1.08); }
+
+footer {
+  height: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 4rem;
+}
+footer:hover { background: var(--surface); }
+
+footer h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.45em;
+}
+
+@media (min-width: 700px) {
+  main .arrivals {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    padding: 0.8rem;
+  }
+  main .arrivals li { height: 34vw; }
+}
+
+@media (min-width: 1100px) {
+  main .arrivals {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  main .arrivals li { height: 22vw; }
+}
+
+/* ── PHOTO MAPPINGS ── */
+.arrivals li.A   { background-image: url(cristy/A.jpg); }
+.arrivals li.B   { background-image: url(cristy/B.jpg); }
+.arrivals li.C   { background-image: url(cristy/C.jpg); }
+.arrivals li.D   { background-image: url(cristy/D.jpg); }
+.arrivals li.E   { background-image: url(cristy/E.jpg); }
+.arrivals li.F   { background-image: url(cristy/F.jpg); }
+.arrivals li.G   { background-image: url(cristy/G.jpg); }
+.arrivals li.H   { background-image: url(cristy/H.jpg); }
+.arrivals li.I   { background-image: url(cristy/I.jpg); }
+.arrivals li.J   { background-image: url(cristy/J.jpg); }
+.arrivals li.K   { background-image: url(cristy/K.jpg); }
+.arrivals li.L   { background-image: url(cristy/L.jpg); }
+.arrivals li.M   { background-image: url(cristy/M.jpg); }
+.arrivals li.N   { background-image: url(cristy/N.JPG); }
+.arrivals li.O   { background-image: url(cristy/O.JPG); }
+.arrivals li.Q   { background-image: url(cristy/Q.JPG); }
+.arrivals li.R   { background-image: url(cristy/R.JPG); }
+.arrivals li.S   { background-image: url(cristy/S.JPG); }
+.arrivals li.T   { background-image: url(cristy/T.JPG); }
+.arrivals li.U   { background-image: url(cristy/U.JPG); }
+.arrivals li.V   { background-image: url(cristy/V.JPG); }
+.arrivals li.W   { background-image: url(cristy/W.JPG); }
+.arrivals li.X   { background-image: url(cristy/X.JPG); }
+.arrivals li.Y   { background-image: url(cristy/Y.JPG); }
+.arrivals li.Z   { background-image: url(cristy/Z.JPG); background-position: top; }
+.arrivals li.AA  { background-image: url(cristy/AA.JPG); }
+.arrivals li.BB  { background-image: url(cristy/BB.JPG); }
+.arrivals li.CC  { background-image: url(cristy/CC.JPG); }
+.arrivals li.DD  { background-image: url(cristy/DD.JPG); }
+.arrivals li.EE  { background-image: url(cristy/EE.JPG); }
+.arrivals li.FF  { background-image: url(cristy/FF.JPG); }
+.arrivals li.GG  { background-image: url(cristy/GG.JPG); }
+.arrivals li.HH  { background-image: url(cristy/HH.JPG); }
+.arrivals li.II  { background-image: url(cristy/II.JPG); }
+.arrivals li.JJ  { background-image: url(cristy/JJ.JPG); }
+.arrivals li.KK  { background-image: url(cristy/KK.JPG); }
+.arrivals li.LL  { background-image: url(cristy/LL.JPG); }
+.arrivals li.MM  { background-image: url(cristy/MM.JPG); }
+.arrivals li.NN  { background-image: url(cristy/NN.JPG); }
+.arrivals li.OO  { background-image: url(cristy/OO.JPG); }
+.arrivals li.PP  { background-image: url(cristy/PP.JPG); }
+.arrivals li.QQ  { background-image: url(cristy/QQ.JPG); }
+.arrivals li.RR  { background-image: url(cristy/RR.JPG); }
+.arrivals li.SS  { background-image: url(cristy/SS.JPG); }
+.arrivals li.TT  { background-image: url(cristy/TT.JPG); }
+.arrivals li.UU  { background-image: url(cristy/UU.JPG); }
+.arrivals li.VV  { background-image: url(cristy/VV.JPG); }
+.arrivals li.WW  { background-image: url(cristy/WW.JPG); }
+.arrivals li.XX  { background-image: url(cristy/XX.JPG); }
+.arrivals li.YY  { background-image: url(cristy/YY.JPG); }
+.arrivals li.ZZ  { background-image: url(cristy/ZZ.JPG); }
+.arrivals li.AAA { background-image: url(cristy/AAA.JPG); }
+.arrivals li.BBB { background-image: url(cristy/BBB.JPG); }
+.arrivals li.CCC { background-image: url(cristy/CCC.JPG); }
+.arrivals li.DDD { background-image: url(cristy/DDD.JPG); }
+.arrivals li.EEE { background-image: url(cristy/EEE.JPG); }
+.arrivals li.FFF { background-image: url(cristy/FFF.JPG); }
+.arrivals li.GGG { background-image: url(cristy/GGG.JPG); }
+.arrivals li.HHH { background-image: url(cristy/HHH.JPG); }
+.arrivals li.III { background-image: url(cristy/III.JPG); }
+.arrivals li.JJJ { background-image: url(cristy/JJJ.JPG); }
+.arrivals li.KKK { background-image: url(cristy/KKK.JPG); }
+.arrivals li.LLL { background-image: url(cristy/LLL.JPG); }
+.arrivals li.MMM { background-image: url(cristy/MMM.JPG); }
+.arrivals li.NNN { background-image: url(cristy/NNN.JPG); }
+.arrivals li.OOO { background-image: url(cristy/OOO.JPG); }
+.arrivals li.PPP { background-image: url(cristy/PPP.JPG); }
+.arrivals li.QQQ { background-image: url(cristy/QQQ.JPG); }
+.arrivals li.RRR { background-image: url(cristy/RRR.JPG); }
+.arrivals li.SSS { background-image: url(cristy/SSS.JPG); }
+.arrivals li.TTT { background-image: url(cristy/TTT.JPG); }
+.arrivals li.UUU { background-image: url(cristy/UUU.JPG); }
+.arrivals li.VVV { background-image: url(cristy/VVV.JPG); }
+.arrivals li.WWW { background-image: url(cristy/WWW.jpg); }
+.arrivals li.XXX { background-image: url(cristy/XXX.jpg); }
+.arrivals li.YYY { background-image: url(cristy/YYY.png); }
+.arrivals li.ZZZ { background-image: url(cristy/ZZZ.jpg); }

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@200;300;400;500&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --bg: #0e0e0e;
+  --surface: #161616;
+  --gold: #c9a96e;
+  --gold-dim: rgba(201, 169, 110, 0.15);
+  --text: #f0ebe2;
+  --muted: #6b635a;
+  --border: rgba(201, 169, 110, 0.2);
+  --radius: 4px;
+}
+
+html { box-sizing: border-box; scroll-behavior: smooth; }
+*, *:before, *:after { box-sizing: inherit; }
+
+main ul.arrivals::-webkit-scrollbar { display: none; }
+
+body {
+  background-color: var(--bg);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+}
+
+/* ── HEADER ── */
+header {
+  width: 100%;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  padding: 0 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  backdrop-filter: blur(12px);
+}
+
+header .hamburger {
+  width: 2.4rem;
+  height: auto;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  filter: invert(1);
+}
+
+header .hamburger:hover { opacity: 1; }
+
+header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--text);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header nav { display: none; }
+
+header nav.active {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 7rem;
+  z-index: 300;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-top: none;
+  min-width: 18rem;
+}
+
+header nav ul li {
+  border-top: 1px solid var(--border);
+}
+
+header nav ul li:first-child { border-top: none; }
+
+header nav ul li a {
+  display: block;
+  padding: 1.6rem 2.4rem;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: color 0.2s, background 0.2s;
+}
+
+header nav ul li a:hover {
+  color: var(--gold);
+  background: var(--gold-dim);
+}
+
+/* ── HERO ── */
+main .welkom {
+  background-image: url(marie/1.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+main .welkom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(to bottom, transparent, var(--bg));
+}
+
+/* ── GALLERY GRID ── */
+main .arrivals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  padding: 0.6rem;
+  margin: 0;
+}
+
+main .arrivals li {
+  height: 52vw;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              filter 0.3s ease;
+  filter: brightness(0.92);
+}
+
+main .arrivals li:hover {
+  filter: brightness(1.05);
+  z-index: 2;
+}
+
+/* ── DOWN SECTION ── */
+main .down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+main .down li {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+main .down .A,
+main .down .B,
+main .down .C,
+main .down .D {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius);
+  width: 100%;
+}
+
+/* ── VIDEO SECTION ── */
+.vid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 2rem 6rem;
+}
+
+.vid li {
+  width: 100%;
+  max-width: 600px;
+}
+
+.vid video {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+  background: var(--surface);
+}
+
+/* ── FOOTER ── */
+footer {
+  height: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer:hover { background: var(--surface); }
+
+footer h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.45em;
+}
+
+/* ── DESKTOP ── */
+@media (min-width: 700px) {
+  main .arrivals {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  main .arrivals li {
+    height: 38vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  main .arrivals {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  main .arrivals li { height: 28vw; }
+
+  main .down {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 4rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  main .down .A,
+  main .down .B,
+  main .down .C,
+  main .down .D {
+    height: 80vh;
+    width: 100%;
+    margin: 0;
+  }
+
+  .vid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* ── PHOTO MAPPINGS (unchanged) ── */
+.arrivals li.fr1  { background-image: url(marie/0024d54d-7111-41c0-4f04-fbc2f4708332.jpg); }
+.arrivals li.fr2  { background-image: url(marie/0b73845c-91a9-47da-4f0d-ff51e9daec02.jpg); }
+.arrivals li.fr3  { background-image: url(marie/152caf7b-8882-4acf-7920-e3e82d39f192.jpg); }
+.arrivals li.fr4  { background-image: url(marie/1d6c3993-4c0d-4507-6c48-44e2e4a490f9.jpg); }
+.arrivals li.fr5  { background-image: url(marie/1ed3ef34-5410-492a-76d1-54ad87b35f43.jpg); }
+.arrivals li.fr6  { background-image: url(marie/2f64e8bd-fd47-40e6-7887-8149914e435a.jpg); }
+.arrivals li.fr7  { background-image: url(marie/3e407b44-7601-457b-4093-c7b0cf293a32.jpg); }
+.arrivals li.fr8  { background-image: url(marie/424649960_865286795607215_4034490953538226292_n.jpg); }
+.arrivals li.fr9  { background-image: url(marie/479277866_17970889538829739_4980337703981989304_n.jpg); }
+.arrivals li.fr10 { background-image: url(marie/4af6141b-689b-4a44-5ab7-3e257b0c63b5.jpg); }
+.arrivals li.fr11 { background-image: url(marie/59a6873b-c603-455d-40a1-a85b7641f405.jpg); }
+.arrivals li.fr12 { background-image: url(marie/9fab8644-651b-4888-5fd0-04da30a5f348.jpg); }
+.arrivals li.fr13 { background-image: url(marie/a04b9a31-4e7c-4829-5c78-79ccfd2f5003.jpg); }
+.arrivals li.fr14 { background-image: url(marie/da12c1d9-f72b-47b3-7282-07cba82c4c36.jpg); }
+.arrivals li.fr15 { background-image: url(marie/IMG_4584.JPG); }
+.arrivals li.fr16 { background-image: url(marie/IMG_4585.JPG); }
+.arrivals li.fr17 { background-image: url(marie/IMG_4645.JPG); }
+.arrivals li.fr18 { background-image: url(marie/IMG_4780.JPEG); }
+.arrivals li.fr19 { background-image: url(marie/IMG_4781.JPEG); }
+.arrivals li.fr20 { background-image: url(marie/IMG_5016.JPEG); }
+.arrivals li.fr21 { background-image: url(marie/IMG_5298.JPEG); }
+.arrivals li.fr22 { background-image: url(marie/IMG_5299.JPEG); }
+.arrivals li.fr23 { background-image: url(marie/IMG_5338.JPEG); }
+.arrivals li.fr24 { background-image: url(marie/IMG_6711.JPEG); }
+.arrivals li.fr25 { background-image: url(marie/IMG_6712.JPEG); }
+.arrivals li.fr27 { background-image: url(marie/IMG_6716.JPEG); }
+.arrivals li.fr28 { background-image: url(marie/IMG_7177.JPG); }
+.arrivals li.fr29 { background-image: url(marie/IMG_7215.JPEG); }
+.arrivals li.fr30 { background-image: url(marie/mary-nabokova_0083.jpg); }
+.arrivals li.fr31 { background-image: url(marie/mary-nabokova_0122.jpg); }
+.arrivals li.fr32 { background-image: url(marie/mary-nabokova_0124.jpg); }
+.arrivals li.fr33 { background-image: url(marie/mary-nabokova_0125.jpg); }
+.arrivals li.fr34 { background-image: url(marie/mary-nabokova_0213.jpg); }
+.arrivals li.fr35 { background-image: url(marie/mary-nabokova_0252.JPEG); }
+.arrivals li.fr36 { background-image: url(marie/mary-nabokova_0256.jpg); }
+.arrivals li.fr37 { background-image: url(marie/mary-nabokova_0316.jpg); }
+.arrivals li.fr39 { background-image: url(marie/mary-nabokova_0318.jpg); }
+.arrivals li.fr40 { background-image: url(marie/mary-nabokova_0329.jpg); }
+.arrivals li.fr41 { background-image: url(marie/mary-nabokova_0330.jpg); }
+.arrivals li.fr42 { background-image: url(marie/mary-nabokova_0411.jpg); }
+.arrivals li.fr43 { background-image: url(marie/mary-nabokova_0416.jpg); }
+.arrivals li.fr44 { background-image: url(marie/mary-nabokova_0477.JPEG); }
+.arrivals li.fr49 { background-image: url(marie/mary-nabokova_0520.jpg); }
+.arrivals li.fr46 { background-image: url(marie/mary-nabokova_0535.jpg); }
+.arrivals li.fr47 { background-image: url(marie/mary-nabokova_0537.jpg); }
+.arrivals li.fr48 { background-image: url(marie/mary-nabokova_0539.jpg); }
+.arrivals li.fr45 { background-image: url(marie/mary-nabokova_0540.jpg); }
+.arrivals li.fr50 { background-image: url(marie/mary-nabokova_0603.jpeg); }
+.arrivals li.fr51 { background-image: url(marie/mary-nabokova_0770.jpg); }
+.arrivals li.fr52 { background-image: url(marie/p9cly1XB.jpeg); }
+
+.down .A { background-image: url(marie/groot.jpg); background-size: cover; background-position: center; }
+.down .B { background-image: url(marie/groot2.jpg); background-size: cover; background-position: center; }
+.down .C { background-image: url(marie/groot3.jpg); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: var(--surface); }
+.down .D { background-image: url(marie/groot4.jpg); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: var(--surface); }
