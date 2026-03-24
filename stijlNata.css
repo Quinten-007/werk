@@ -291,7 +291,7 @@ footer h1 {
 
 /* ── SPECIFIC IMAGE OVERRIDES ── */
 main .arrivals li.qq4 {
-  background-image: url(rood/A.jpg)
+  background-image: url(rood/A.jpg);
 }
 main .arrivals li.qq1 {
   background-image: url(rood/IMG_8453.PNG);
