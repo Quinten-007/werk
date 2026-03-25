@@ -927,6 +927,30 @@ header {
 }
 
 /* ── SPECIFIC IMAGE OVERRIDES ── */
+main .arrivals li.xx1 {
+   background-image: url(QQ/A.JPG)
+}
+main .arrivals li.xx2 {
+   background-image: url(QQ/B.JPG)
+}
+main .arrivals li.xx3 {
+   background-image: url(QQ/C.JPG)
+}
+main .arrivals li.xx4 {
+   background-image: url(QQ/D.JPG)
+}
+main .arrivals li.xx5 {
+   background-image: url(QQ/E.JPG)
+}
+main .arrivals li.xx6 {
+   background-image: url(QQ/F.JPG)
+}
+main .arrivals li.xx7 {
+   background-image: url(QQ/G.JPG)
+}
+main .arrivals li.xx8 {
+   background-image: url(QQ/H.JPG)
+}
 main .arrivals li.qq4 {
   background-image: url(rood/A.jpg);
 }
