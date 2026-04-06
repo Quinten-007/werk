@@ -927,16 +927,16 @@ header {
 }
 
 /* ── SPECIFIC IMAGE OVERRIDES ── */
-main .arrivals li.a1 {
+main .arrivals li.aa1 {
    background-image: url(aa/1.JPG)
 }
-main .arrivals li.a2 {
+main .arrivals li.aa2 {
    background-image: url(aa/2.JPG)
 }
-main .arrivals li.a3 {
+main .arrivals li.aa3 {
    background-image: url(aa/3.JPG)
 }
-main .arrivals li.a4 {
+main .arrivals li.aa4 {
    background-image: url(aa/4.JPG)
 }
 main .arrivals li.xx1 {
