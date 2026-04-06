@@ -927,7 +927,18 @@ header {
 }
 
 /* ── SPECIFIC IMAGE OVERRIDES ── */
-
+main .arrivals li.a1 {
+   background-image: url(aa/1.JPG)
+}
+main .arrivals li.a2 {
+   background-image: url(aa/2.JPG)
+}
+main .arrivals li.a3 {
+   background-image: url(aa/3.JPG)
+}
+main .arrivals li.a4 {
+   background-image: url(aa/4.JPG)
+}
 main .arrivals li.xx1 {
    background-image: url(QQ/A.JPG)
 }
