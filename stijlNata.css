@@ -926,7 +926,7 @@ header {
   animation: fadeUp 0.8s 0.1s var(--transition) both;
 }
 
-/* ── SPECIFIC IMAGE OVERRIDES ── */
+/* ── SPECIFIC IMAGE OVERRIDES */
 main .arrivals li.aa1 {
    background-image: url(aa/1.JPG)
 }
