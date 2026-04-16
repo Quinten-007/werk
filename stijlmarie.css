@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@200;300;400;500&display=swap");
 
 :root {
   font-size: 62.5%;
@@ -12,14 +12,23 @@
   --radius: 4px;
 }
 
-html { box-sizing: border-box; scroll-behavior: smooth; }
-*, *:before, *:after { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-main ul.arrivals::-webkit-scrollbar { display: none; }
+main ul.arrivals::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   background-color: var(--bg);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--text);
 }
 
@@ -47,10 +56,12 @@ header .hamburger {
   filter: invert(1);
 }
 
-header .hamburger:hover { opacity: 1; }
+header .hamburger:hover {
+  opacity: 1;
+}
 
 header h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 0.35em;
@@ -61,7 +72,9 @@ header h1 {
   transform: translateX(-50%);
 }
 
-header nav { display: none; }
+header nav {
+  display: none;
+}
 
 header nav.active {
   display: block;
@@ -84,7 +97,9 @@ header nav ul li {
   border-top: 1px solid var(--border);
 }
 
-header nav ul li:first-child { border-top: none; }
+header nav ul li:first-child {
+  border-top: none;
+}
 
 header nav ul li a {
   display: block;
@@ -95,7 +110,9 @@ header nav ul li a {
   font-weight: 300;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  transition: color 0.2s, background 0.2s;
+  transition:
+    color 0.2s,
+    background 0.2s;
 }
 
 header nav ul li a:hover {
@@ -114,7 +131,7 @@ main .welkom {
 }
 
 main .welkom::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -139,8 +156,9 @@ main .arrivals li {
   border-radius: var(--radius);
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              filter 0.3s ease;
+  transition:
+    transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    filter 0.3s ease;
   filter: brightness(0.92);
 }
 
@@ -210,10 +228,12 @@ footer {
   transition: background 0.3s;
 }
 
-footer:hover { background: var(--surface); }
+footer:hover {
+  background: var(--surface);
+}
 
 footer h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: var(--gold);
   text-transform: uppercase;
@@ -241,7 +261,9 @@ footer h1 {
     padding: 1rem;
   }
 
-  main .arrivals li { height: 28vw; }
+  main .arrivals li {
+    height: 28vw;
+  }
 
   main .down {
     display: grid;
@@ -273,58 +295,395 @@ footer h1 {
 }
 
 /* ── PHOTO MAPPINGS (unchanged) ── */
-.arrivals li.fr1  { background-image: url(marie/0024d54d-7111-41c0-4f04-fbc2f4708332.jpg); }
-.arrivals li.fr2  { background-image: url(marie/0b73845c-91a9-47da-4f0d-ff51e9daec02.jpg); }
-.arrivals li.fr3  { background-image: url(marie/152caf7b-8882-4acf-7920-e3e82d39f192.jpg); }
-.arrivals li.fr4  { background-image: url(marie/1d6c3993-4c0d-4507-6c48-44e2e4a490f9.jpg); }
-.arrivals li.fr5  { background-image: url(marie/1ed3ef34-5410-492a-76d1-54ad87b35f43.jpg); }
-.arrivals li.fr6  { background-image: url(marie/2f64e8bd-fd47-40e6-7887-8149914e435a.jpg); }
-.arrivals li.fr7  { background-image: url(marie/3e407b44-7601-457b-4093-c7b0cf293a32.jpg); }
-.arrivals li.fr8  { background-image: url(marie/424649960_865286795607215_4034490953538226292_n.jpg); }
-.arrivals li.fr9  { background-image: url(marie/479277866_17970889538829739_4980337703981989304_n.jpg); }
-.arrivals li.fr10 { background-image: url(marie/4af6141b-689b-4a44-5ab7-3e257b0c63b5.jpg); }
-.arrivals li.fr11 { background-image: url(marie/59a6873b-c603-455d-40a1-a85b7641f405.jpg); }
-.arrivals li.fr12 { background-image: url(marie/9fab8644-651b-4888-5fd0-04da30a5f348.jpg); }
-.arrivals li.fr13 { background-image: url(marie/a04b9a31-4e7c-4829-5c78-79ccfd2f5003.jpg); }
-.arrivals li.fr14 { background-image: url(marie/da12c1d9-f72b-47b3-7282-07cba82c4c36.jpg); }
-.arrivals li.fr15 { background-image: url(marie/IMG_4584.JPG); }
-.arrivals li.fr16 { background-image: url(marie/IMG_4585.JPG); }
-.arrivals li.fr17 { background-image: url(marie/IMG_4645.JPG); }
-.arrivals li.fr18 { background-image: url(marie/IMG_4780.JPEG); }
-.arrivals li.fr19 { background-image: url(marie/IMG_4781.JPEG); }
-.arrivals li.fr20 { background-image: url(marie/IMG_5016.JPEG); }
-.arrivals li.fr21 { background-image: url(marie/IMG_5298.JPEG); }
-.arrivals li.fr22 { background-image: url(marie/IMG_5299.JPEG); }
-.arrivals li.fr23 { background-image: url(marie/IMG_5338.JPEG); }
-.arrivals li.fr24 { background-image: url(marie/IMG_6711.JPEG); }
-.arrivals li.fr25 { background-image: url(marie/IMG_6712.JPEG); }
-.arrivals li.fr27 { background-image: url(marie/IMG_6716.JPEG); }
-.arrivals li.fr28 { background-image: url(marie/IMG_7177.JPG); }
-.arrivals li.fr29 { background-image: url(marie/IMG_7215.JPEG); }
-.arrivals li.fr30 { background-image: url(marie/mary-nabokova_0083.jpg); }
-.arrivals li.fr31 { background-image: url(marie/mary-nabokova_0122.jpg); }
-.arrivals li.fr32 { background-image: url(marie/mary-nabokova_0124.jpg); }
-.arrivals li.fr33 { background-image: url(marie/mary-nabokova_0125.jpg); }
-.arrivals li.fr34 { background-image: url(marie/mary-nabokova_0213.jpg); }
-.arrivals li.fr35 { background-image: url(marie/mary-nabokova_0252.JPEG); }
-.arrivals li.fr36 { background-image: url(marie/mary-nabokova_0256.jpg); }
-.arrivals li.fr37 { background-image: url(marie/mary-nabokova_0316.jpg); }
-.arrivals li.fr39 { background-image: url(marie/mary-nabokova_0318.jpg); }
-.arrivals li.fr40 { background-image: url(marie/mary-nabokova_0329.jpg); }
-.arrivals li.fr41 { background-image: url(marie/mary-nabokova_0330.jpg); }
-.arrivals li.fr42 { background-image: url(marie/mary-nabokova_0411.jpg); }
-.arrivals li.fr43 { background-image: url(marie/mary-nabokova_0416.jpg); }
-.arrivals li.fr44 { background-image: url(marie/mary-nabokova_0477.JPEG); }
-.arrivals li.fr49 { background-image: url(marie/mary-nabokova_0520.jpg); }
-.arrivals li.fr46 { background-image: url(marie/mary-nabokova_0535.jpg); }
-.arrivals li.fr47 { background-image: url(marie/mary-nabokova_0537.jpg); }
-.arrivals li.fr48 { background-image: url(marie/mary-nabokova_0539.jpg); }
-.arrivals li.fr45 { background-image: url(marie/mary-nabokova_0540.jpg); }
-.arrivals li.fr50 { background-image: url(marie/mary-nabokova_0603.jpeg); }
-.arrivals li.fr51 { background-image: url(marie/mary-nabokova_0770.jpg); }
-.arrivals li.fr52 { background-image: url(marie/p9cly1XB.jpeg); }
+.arrivals li.fr1 {
+  background-image: url(marie/0024d54d-7111-41c0-4f04-fbc2f4708332.jpg);
+}
+.arrivals li.fr2 {
+  background-image: url(marie/0b73845c-91a9-47da-4f0d-ff51e9daec02.jpg);
+}
+.arrivals li.fr3 {
+  background-image: url(marie/152caf7b-8882-4acf-7920-e3e82d39f192.jpg);
+}
+.arrivals li.fr4 {
+  background-image: url(marie/1d6c3993-4c0d-4507-6c48-44e2e4a490f9.jpg);
+}
+.arrivals li.fr5 {
+  background-image: url(marie/1ed3ef34-5410-492a-76d1-54ad87b35f43.jpg);
+}
+.arrivals li.fr6 {
+  background-image: url(marie/2f64e8bd-fd47-40e6-7887-8149914e435a.jpg);
+}
+.arrivals li.fr7 {
+  background-image: url(marie/3e407b44-7601-457b-4093-c7b0cf293a32.jpg);
+}
+.arrivals li.fr8 {
+  background-image: url(marie/424649960_865286795607215_4034490953538226292_n.jpg);
+}
+.arrivals li.fr9 {
+  background-image: url(marie/479277866_17970889538829739_4980337703981989304_n.jpg);
+}
+.arrivals li.fr10 {
+  background-image: url(marie/4af6141b-689b-4a44-5ab7-3e257b0c63b5.jpg);
+}
+.arrivals li.fr11 {
+  background-image: url(marie/59a6873b-c603-455d-40a1-a85b7641f405.jpg);
+}
+.arrivals li.fr12 {
+  background-image: url(marie/9fab8644-651b-4888-5fd0-04da30a5f348.jpg);
+}
+.arrivals li.fr13 {
+  background-image: url(marie/a04b9a31-4e7c-4829-5c78-79ccfd2f5003.jpg);
+}
+.arrivals li.fr14 {
+  background-image: url(marie/da12c1d9-f72b-47b3-7282-07cba82c4c36.jpg);
+}
+.arrivals li.fr15 {
+  background-image: url(marie/IMG_4584.JPG);
+}
+.arrivals li.fr16 {
+  background-image: url(marie/IMG_4585.JPG);
+}
+.arrivals li.fr17 {
+  background-image: url(marie/IMG_4645.JPG);
+}
+.arrivals li.fr18 {
+  background-image: url(marie/IMG_4780.JPEG);
+}
+.arrivals li.fr19 {
+  background-image: url(marie/IMG_4781.JPEG);
+}
+.arrivals li.fr20 {
+  background-image: url(marie/IMG_5016.JPEG);
+}
+.arrivals li.fr21 {
+  background-image: url(marie/IMG_5298.JPEG);
+}
+.arrivals li.fr22 {
+  background-image: url(marie/IMG_5299.JPEG);
+}
+.arrivals li.fr23 {
+  background-image: url(marie/IMG_5338.JPEG);
+}
+.arrivals li.fr24 {
+  background-image: url(marie/IMG_6711.JPEG);
+}
+.arrivals li.fr25 {
+  background-image: url(marie/IMG_6712.JPEG);
+}
+.arrivals li.fr27 {
+  background-image: url(marie/IMG_6716.JPEG);
+}
+.arrivals li.fr28 {
+  background-image: url(marie/IMG_7177.JPG);
+}
+.arrivals li.fr29 {
+  background-image: url(marie/IMG_7215.JPEG);
+}
+.arrivals li.fr30 {
+  background-image: url(marie/mary-nabokova_0083.jpg);
+}
+.arrivals li.fr31 {
+  background-image: url(marie/mary-nabokova_0122.jpg);
+}
+.arrivals li.fr32 {
+  background-image: url(marie/mary-nabokova_0124.jpg);
+}
+.arrivals li.fr33 {
+  background-image: url(marie/mary-nabokova_0125.jpg);
+}
+.arrivals li.fr34 {
+  background-image: url(marie/mary-nabokova_0213.jpg);
+}
+.arrivals li.fr35 {
+  background-image: url(marie/mary-nabokova_0252.JPEG);
+}
+.arrivals li.fr36 {
+  background-image: url(marie/mary-nabokova_0256.jpg);
+}
+.arrivals li.fr37 {
+  background-image: url(marie/mary-nabokova_0316.jpg);
+}
+.arrivals li.fr39 {
+  background-image: url(marie/mary-nabokova_0318.jpg);
+}
+.arrivals li.fr40 {
+  background-image: url(marie/mary-nabokova_0329.jpg);
+}
+.arrivals li.fr41 {
+  background-image: url(marie/mary-nabokova_0330.jpg);
+}
+.arrivals li.fr42 {
+  background-image: url(marie/mary-nabokova_0411.jpg);
+}
+.arrivals li.fr43 {
+  background-image: url(marie/mary-nabokova_0416.jpg);
+}
+.arrivals li.fr44 {
+  background-image: url(marie/mary-nabokova_0477.JPEG);
+}
+.arrivals li.fr49 {
+  background-image: url(marie/mary-nabokova_0520.jpg);
+}
+.arrivals li.fr46 {
+  background-image: url(marie/mary-nabokova_0535.jpg);
+}
+.arrivals li.fr47 {
+  background-image: url(marie/mary-nabokova_0537.jpg);
+}
+.arrivals li.fr48 {
+  background-image: url(marie/mary-nabokova_0539.jpg);
+}
+.arrivals li.fr45 {
+  background-image: url(marie/mary-nabokova_0540.jpg);
+}
+.arrivals li.fr50 {
+  background-image: url(marie/mary-nabokova_0603.jpeg);
+}
+.arrivals li.fr51 {
+  background-image: url(marie/mary-nabokova_0770.jpg);
+}
+.arrivals li.fr52 {
+  background-image: url(marie/p9cly1XB.jpeg);
+}
 
-.down .A { background-image: url(marie/groot.jpg); background-size: cover; background-position: center; }
-.down .B { background-image: url(marie/groot2.jpg); background-size: cover; background-position: center; }
-.down .C { background-image: url(marie/groot3.jpg); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: var(--surface); }
-.down .D { background-image: url(marie/groot4.jpg); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: var(--surface); }
+/* Letter-gebaseerde bestanden */
+.arrivals li.fr60 {
+  background-image: url(me/A1.jpg);
+}
+.arrivals li.fr61 {
+  background-image: url(me/A2.jpg);
+}
+.arrivals li.fr62 {
+  background-image: url(me/A3.jpg);
+}
+.arrivals li.fr63 {
+  background-image: url(me/A4.jpg);
+}
+.arrivals li.fr64 {
+  background-image: url(me/A5.jpg);
+}
+.arrivals li.fr65 {
+  background-image: url(me/B1.jpg);
+}
+.arrivals li.fr66 {
+  background-image: url(me/B2.jpg);
+}
+.arrivals li.fr67 {
+  background-image: url(me/C1.jpg);
+}
+.arrivals li.fr68 {
+  background-image: url(me/C2.jpg);
+}
+.arrivals li.fr69 {
+  background-image: url(me/C3.jpg);
+}
+.arrivals li.fr70 {
+  background-image: url(me/C4.jpg);
+}
+.arrivals li.fr71 {
+  background-image: url(me/C5.jpg);
+}
+.arrivals li.fr72 {
+  background-image: url(me/C6.jpg);
+}
+.arrivals li.fr73 {
+  background-image: url(me/C7.jpg);
+}
+.arrivals li.fr74 {
+  background-image: url(me/D1.jpg);
+}
+.arrivals li.fr75 {
+  background-image: url(me/D2.jpg);
+}
+.arrivals li.fr76 {
+  background-image: url(me/D3.jpg);
+}
+.arrivals li.fr77 {
+  background-image: url(me/D4.jpg);
+}
+.arrivals li.fr78 {
+  background-image: url(me/D5.jpg);
+}
+.arrivals li.fr79 {
+  background-image: url(me/D6.jpg);
+}
+.arrivals li.fr80 {
+  background-image: url(me/D7.jpg);
+}
+.arrivals li.fr81 {
+  background-image: url(me/D8.jpg);
+}
+.arrivals li.fr82 {
+  background-image: url(me/D9.jpg);
+}
+.arrivals li.fr83 {
+  background-image: url(me/E1.jpg);
+}
+.arrivals li.fr84 {
+  background-image: url(me/E2.jpg);
+}
+.arrivals li.fr85 {
+  background-image: url(me/E3.jpg);
+}
+.arrivals li.fr86 {
+  background-image: url(me/E4.jpg);
+}
+.arrivals li.fr87 {
+  background-image: url(me/E5.jpg);
+}
+.arrivals li.fr88 {
+  background-image: url(me/E6.jpg);
+}
+.arrivals li.fr89 {
+  background-image: url(me/E7.jpg);
+}
+.arrivals li.fr90 {
+  background-image: url(me/E8.jpg);
+}
+.arrivals li.fr91 {
+  background-image: url(me/F1.jpg);
+}
+.arrivals li.fr92 {
+  background-image: url(me/F2.jpg);
+}
+.arrivals li.fr93 {
+  background-image: url(me/G1.jpg);
+}
+.arrivals li.fr94 {
+  background-image: url(me/G2.jpg);
+}
+.arrivals li.fr95 {
+  background-image: url(me/G3.jpg);
+}
+.arrivals li.fr96 {
+  background-image: url(me/G4.jpg);
+}
+.arrivals li.fr97 {
+  background-image: url(me/H1.jpg);
+}
+.arrivals li.fr98 {
+  background-image: url(me/H2.jpg);
+}
+.arrivals li.fr99 {
+  background-image: url(me/H3.jpg);
+}
+.arrivals li.fr100 {
+  background-image: url(me/H4.jpg);
+}
+.arrivals li.fr101 {
+  background-image: url(me/H5.jpg);
+}
+.arrivals li.fr102 {
+  background-image: url(me/I1.jpg);
+}
+.arrivals li.fr103 {
+  background-image: url(me/I2.jpg);
+}
+.arrivals li.fr104 {
+  background-image: url(me/J1.jpg);
+}
+.arrivals li.fr105 {
+  background-image: url(me/J2.jpg);
+}
+.arrivals li.fr106 {
+  background-image: url(me/K1.jpg);
+}
+.arrivals li.fr107 {
+  background-image: url(me/K2.jpg);
+}
+.arrivals li.fr108 {
+  background-image: url(me/K3.jpg);
+}
+.arrivals li.fr109 {
+  background-image: url(me/K4.jpg);
+}
+
+/* Mary Nabokova bestanden */
+.arrivals li.fr110 {
+  background-image: url(me/mary-nabokova_0133.jpg);
+}
+.arrivals li.fr111 {
+  background-image: url(me/mary-nabokova_0179.jpg);
+}
+.arrivals li.fr112 {
+  background-image: url(me/mary-nabokova_0191.jpg);
+}
+.arrivals li.fr113 {
+  background-image: url(me/mary-nabokova_0195.jpg);
+}
+.arrivals li.fr114 {
+  background-image: url(me/mary-nabokova_0207.jpg);
+}
+.arrivals li.fr115 {
+  background-image: url(me/mary-nabokova_0222_400px.jpg);
+}
+.arrivals li.fr116 {
+  background-image: url(me/mary-nabokova_0337.jpg);
+}
+.arrivals li.fr117 {
+  background-image: url(me/mary-nabokova_0351.jpg);
+}
+.arrivals li.fr118 {
+  background-image: url(me/mary-nabokova_0367.jpg);
+}
+.arrivals li.fr119 {
+  background-image: url(me/mary-nabokova_0370.jpg);
+}
+.arrivals li.fr120 {
+  background-image: url(me/mary-nabokova_0397.jpg);
+}
+.arrivals li.fr121 {
+  background-image: url(me/mary-nabokova_0408.jpg);
+}
+.arrivals li.fr122 {
+  background-image: url(me/mary-nabokova_0415.jpg);
+}
+.arrivals li.fr123 {
+  background-image: url(me/mary-nabokova_0421.jpg);
+}
+.arrivals li.fr124 {
+  background-image: url(me/mary-nabokova_0429.jpg);
+}
+.arrivals li.fr125 {
+  background-image: url(me/mary-nabokova_0439.jpg);
+}
+.arrivals li.fr126 {
+  background-image: url(me/mary-nabokova_0444.jpg);
+}
+.arrivals li.fr127 {
+  background-image: url(me/mary-nabokova_0464.jpg);
+}
+.arrivals li.fr128 {
+  background-image: url(me/mary-nabokova_0505.jpg);
+}
+.arrivals li.fr129 {
+  background-image: url(me/mary-nabokova_0543.jpg);
+}
+.arrivals li.fr130 {
+  background-image: url(me/Z1.jpg);
+}
+
+.down .A {
+  background-image: url(marie/groot.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.down .B {
+  background-image: url(marie/groot2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.down .C {
+  background-image: url(marie/groot3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--surface);
+}
+.down .D {
+  background-image: url(marie/groot4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--surface);
+}
