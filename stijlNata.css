@@ -1000,6 +1000,85 @@ footer small {
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    SPECIFIC IMAGE OVERRIDES (unchanged)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+main .arrivals li.may1 {
+  background-image: url(may/1.jpg);
+}
+main .arrivals li.may2 {
+  background-image: url(may/2.jpg);
+}
+main .arrivals li.may3 {
+  background-image: url(may/3.jpg);
+}
+main .arrivals li.may4 {
+  background-image: url(may/4.jpg);
+}
+main .arrivals li.may5 {
+  background-image: url(may/5.jpg);
+}
+main .arrivals li.may6 {
+  background-image: url(may/6.jpg);
+}
+main .arrivals li.may7 {
+  background-image: url(may/7.jpg);
+}
+main .arrivals li.may8 {
+  background-image: url(may/8.jpg);
+}
+main .arrivals li.may9 {
+  background-image: url(may/9.jpg);
+}
+main .arrivals li.may10 {
+  background-image: url(may/10.jpg);
+}
+main .arrivals li.may11 {
+  background-image: url(may/11.jpg);
+}
+main .arrivals li.may12 {
+  background-image: url(may/12.jpg);
+}
+main .arrivals li.may13 {
+  background-image: url(may/13.jpg);
+}
+main .arrivals li.may14 {
+  background-image: url(may/14.jpg);
+}
+main .arrivals li.may15 {
+  background-image: url(may/15.jpg);
+}
+main .arrivals li.may16 {
+  background-image: url(may/16.jpg);
+}
+main .arrivals li.may17 {
+  background-image: url(may/17.jpg);
+}
+main .arrivals li.may18 {
+  background-image: url(may/18.jpg);
+}
+main .arrivals li.may19 {
+  background-image: url(may/19.jpg);
+}
+main .arrivals li.may20 {
+  background-image: url(may/20.jpg);
+}
+main .arrivals li.may21 {
+  background-image: url(may/21.jpg);
+}
+main .arrivals li.may22 {
+  background-image: url(may/22.jpg);
+}
+main .arrivals li.may23 {
+  background-image: url(may/23.jpg);
+}
+main .arrivals li.may24 {
+  background-image: url(may/24.jpg);
+}
+main .arrivals li.may25 {
+  background-image: url(may/25.jpg);
+}
+main .arrivals li.may26 {
+  background-image: url(may/26.jpg);
+}
+
 main .arrivals li.mm1 {
   background-image: url(mm/1.JPEG);
 }
