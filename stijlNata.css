@@ -1000,6 +1000,82 @@ footer small {
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    SPECIFIC IMAGE OVERRIDES (unchanged)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.arrivals li.lading1 {
+  background-image: url(lading/IMG_8646.JPG);
+}
+.arrivals li.lading2 {
+  background-image: url(lading/IMG_8647.JPG);
+}
+.arrivals li.lading3 {
+  background-image: url(lading/download.jpg);
+}
+
+.arrivals li.lading4 {
+  background-image: url(lading/1.1.webp);
+}
+
+.arrivals li.lading5 {
+  background-image: url(lading/1.webp);
+}
+
+.arrivals li.lading6 {
+  background-image: url(lading/2.webp);
+}
+
+.arrivals li.lading7 {
+  background-image: url(lading/3.webp);
+}
+
+.arrivals li.lading8 {
+  background-image: url(lading/4.webp);
+}
+
+.arrivals li.lading9 {
+  background-image: url(lading/5.webp);
+}
+
+.arrivals li.lading10 {
+  background-image: url(lading/6.webp);
+}
+
+.arrivals li.lading11 {
+  background-image: url(lading/7.webp);
+}
+
+.arrivals li.lading12 {
+  background-image: url(lading/8.webp);
+}
+
+.arrivals li.lading13 {
+  background-image: url(lading/9.webp);
+}
+
+.arrivals li.lading14 {
+  background-image: url(lading/10.webp);
+}
+
+.arrivals li.lading15 {
+  background-image: url(lading/11.webp);
+}
+
+.arrivals li.lading16 {
+  background-image: url(lading/12.webp);
+}
+
+.arrivals li.lading17 {
+  background-image: url(lading/13.webp);
+}
+.arrivals li.lading18 {
+  background-image: url(lading/14.webp);
+}
+
+.arrivals li.lading19 {
+  background-image: url(lading/15.webp);
+}
+
+.arrivals li.lading20 {
+  background-image: url(lading/17.webp);
+}
 .arrivals li.jul1 {
   background-image: url(jul/1.jpg);
 }
