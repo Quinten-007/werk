@@ -1000,6 +1000,21 @@ footer small {
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    SPECIFIC IMAGE OVERRIDES (unchanged)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.arrivals li.grond1{
+  background-image: url(grond/IMG_8649.JPG);
+}
+
+.arrivals li.grond2{
+  background-image: url(grond/IMG_8650.JPG);
+}
+
+.arrivals li.grond3{
+  background-image: url(grond/IMG_8651.JPG);
+}
+
+.arrivals li.grond4{
+  background-image: url(grond/IMG_8652.JPG);
+}
 .arrivals li.lading1 {
   background-image: url(lading/IMG_8646.JPG);
 }
